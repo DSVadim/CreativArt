@@ -235,6 +235,8 @@ body{
     }
   }
   .section3{
+    margin-top: 150px;
+    @include Flex(row,flex-start,flex-start,15px);
     &-container1{
       padding: 150px;
       width: 50%;
@@ -263,6 +265,20 @@ body{
         &-btn1:hover {
           color: $hover;
         }
+      }
+    }
+    &-container2{
+      padding: 150px;
+      width: 50%;
+      position: relative;
+      &__img{
+        position: absolute;
+        top:5px;
+        right:75px;
+      }
+      &__img1{
+        position: absolute;
+        right:350px;
       }
     }
   }
