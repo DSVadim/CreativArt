@@ -1,0 +1,301 @@
+@import './mixin';
+@import './vars';
+@import './reset';
+body{
+  background-color: $background-color;
+}
+.button{
+  @include Inter(16px,700,19.6px);
+  background-color: $Primer;
+  border-radius: 8px;
+}
+.header {
+  @include Flex(row, center, space-around, 20px);
+
+  &__img {
+
+  }
+  .nav {
+    &__list {
+      @include Flex(row, center, center, 40px);
+    }
+    &__link{
+      @include Inter(16px,400,25.6px);
+      color: $main-color;
+    }
+    &__link:hover{
+      color: $hover;
+      border-bottom: 1px solid $Primer;
+    }
+  }
+  &__btn {
+    padding:5px 15px;
+  }
+}
+.main {
+  .section1 {
+    margin-top: 118px;
+    @include Flex(row, flex-start, space-around, 100px);
+
+    &-container1 {
+      @include Flex(column, flex-start, flex-start, 50px);
+      width: 40%;
+    }
+
+    &-box1 {
+      @include Flex(column, flex-start, flex-start, 20px);
+
+      &__title {
+        color: $hover;
+        @include Canela(64px, 500, 76.8px);
+
+        &--green {
+          color: $Primer;
+        }
+      }
+
+      &__text {
+        color: $hover;
+        @include Inter(16px, 400, 25.6px)
+      }
+
+      &__buttons {
+        margin-top: 20px;
+        @include Flex(row, center, center, 40px);
+
+        &-btn {
+          padding: 5px 20px;
+        }
+
+        &-btn1 {
+          @include Inter(16px, 400, 25.6px);
+          color: $main-color;
+        }
+
+        &-btn1:hover {
+          color: $hover;
+        }
+      }
+    }
+
+    &-stats {
+      @include Flex(row, center, center, 94px);
+
+      &__sts {
+        padding-right: 28px;
+        border-right: 1px solid $Primer;
+        @include Flex(column, center, center, 8px);
+
+        &-number {
+          @include Canela(48px, 500, 57.6px);
+          color: $hover;
+
+          &--green {
+            color: $Primer
+          }
+        }
+
+        &-text {
+          @include Inter(16px, 400, 25.6px);
+          color: $hover;
+        }
+      }
+
+      &__sts:last-child {
+        border-right: none;
+      }
+    }
+
+    &-container2 {
+      @include Flex(column, center, center, 0px);
+
+      &__star {
+        position: absolute;
+        top: 355px;
+        right: 404.42px;
+      }
+
+      &__back {
+        z-index: -1;
+      }
+    }
+
+    &-shalker {
+      padding: 0 25px;
+      position: absolute;
+      top: 620px;
+      right: 31px;
+      border-top: 1px solid $Primer;
+      background-color: #131E3A;
+      border-radius: 8px;
+
+      &__time {
+        padding: 10px 1px 0 1px;
+        @include Flex(row, center, space-between, 0px);
+
+        &-text {
+          @include Inter(16px, 400, 25.6px);
+          color: $Primer;
+        }
+      }
+
+      &__dolar {
+        @include Flex(row, center, space-between, 0px);
+        padding: 0 1px 10px 1px;
+
+        &-timer {
+          @include Inter(16px, 400, 19.2px);
+          color: $hover;
+        }
+      }
+
+      &__btn {
+        @include Inter(16px, 700, 19.2px);
+        color: $Primer;
+        padding: 8px 30px;
+        margin: 0 10px;
+        border: 1px solid $Primer;
+        border-radius: 8px;
+      }
+    }
+
+  }
+
+  .section2 {
+    padding-top: 150px;
+
+    &-box1 {
+      @include Flex(row, flex-end, space-between, 0px);
+      padding: 0 45px;
+
+      &__title {
+        width: 45%;
+        @include Canela(48px, 500, 57.6px);
+        color: $Primer;
+
+        &--white {
+          color: $hover;
+        }
+      }
+
+      &__btn {
+        padding: 5px 15px;
+      }
+    }
+
+    .cards {
+      @include Flex(row,center,center,25px);
+      padding: 64px;
+      &-card {
+        border-radius: 8px;
+        border-top: 1px solid $Primer;
+        background-color: $second-color;
+        width: 30%;
+        padding: 15px;
+        &__info {
+          &-text {
+            @include Flex(row,center,space-between,0px);
+            color:$hover;
+            &__title {
+              @include Inter(24px,700,28.8px);
+            }
+            &__etnnumber {
+              @include Flex(row,center,center,0px);
+              &-number {
+                @include Inter(16px,700,19.2px);
+              }
+            }
+          }
+
+          &-btn {
+            &__text{
+              @include Inter(14px, 400, 22.4px);
+              color: #838382;
+            }
+            &__etnnumber {
+              @include Flex(row,center,space-between,0px);
+              &-texts {
+                @include Flex(row,center,flex-start,0px);
+                &__number {
+                  @include Inter(16px, 700, 19.2px);
+                  color:$hover;
+                }
+              }
+              &-button{
+                border: 1px solid $Primer;
+                padding: 5px 15px;
+                border-radius: 8px;
+                color: $Primer;
+                @include Inter(16px,700,19.2px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section3{
+    @include Flex(row,center,center,20px);
+    &-container1{
+      padding: 80px;
+      width: 40%;
+      @include Flex(column,center,center,5px);
+      &__title{
+        color: $hover;
+        @include Canela(48px,500,57.6px);
+        &--green{
+          color: $Primer;
+        }
+      }
+      &__text{
+        @include Inter(14px,400,25.6px);
+        color:$main-color;
+      }
+      &__buttons{
+        @include Flex(row,center,center,35px);
+        &-btn {
+          padding: 5px 20px;
+        }
+
+        &-btn1 {
+          @include Inter(16px, 400, 25.6px);
+          color: $main-color;
+        }
+        &-btn1:hover {
+          color: $hover;
+        }
+      }
+    }
+    &-container2{
+      width: 60%;
+      &__img{
+        position: absolute;
+        top:1645px;
+        right: 351px;
+      }
+      &__img1{
+        position: absolute;
+        top:1525px;
+        right: 51px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Canela';
+  src: url(Font/CanelaText-Medium-Trial.otf) format('otf');
+  font-weight: 500;
+}
