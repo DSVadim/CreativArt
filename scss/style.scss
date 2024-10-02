@@ -235,10 +235,9 @@ body{
     }
   }
   .section3{
-    @include Flex(row,center,center,20px);
     &-container1{
-      padding: 80px;
-      width: 40%;
+      padding: 150px;
+      width: 50%;
       @include Flex(column,center,center,5px);
       &__title{
         color: $hover;
@@ -264,20 +263,6 @@ body{
         &-btn1:hover {
           color: $hover;
         }
-      }
-    }
-    &-container2{
-      width: 60%;
-      &__img{
-        position: absolute;
-        top:1645px;
-        right: 351px;
-      }
-      &__img1{
-        position: absolute;
-        top:1525px;
-        right: 51px;
-        z-index: -1;
       }
     }
   }
