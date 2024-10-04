@@ -282,7 +282,211 @@ body{
       }
     }
   }
+  .section4{
+
+    padding: 150px 142.5px;
+    &-container1{
+      @include Flex(row,center,space-between,0px);
+      &__title{
+        @include Canela(48px,500,57.6px);
+        width: 30%;
+        color: $hover;
+        &--green{
+          color: $Primer;
+        }
+      }
+      &__btn{
+        padding:5px 15px;
+      }
+    }
+    &-container2{
+      @include Flex(row,flex-start,flex-start,30px);
+      &-wrapper {
+        @include Flex(column, flex-start, flex-start, 30px);
+
+        &-block {
+          @include Flex(row, flex-start, flex-start, 30px);
+        }
+      }
+      .section4-box1{
+        @include Flex(row,flex-start,flex-start,5px);
+        background-image: url("/img/backavatar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 239px 104px 24px 24px;
+        &__texts{
+          &-title{
+            color: $main-color;
+            @include Inter(14px,400,22.4px);
+          }
+          &-text{
+            color: $hover;
+            @include Inter(16px,700,19.2px);
+          }
+        }
+      }
+      .section4-box2 {
+        @include Flex(row, flex-start, flex-start, 5px);
+        background-image: url("/img/backavatar1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 239px 323px 24px 24px;
+        &__texts {
+          &-title {
+            color: $main-color;
+            @include Inter(14px, 400, 22.4px);
+          }
+
+          &-text {
+            color: $hover;
+            @include Inter(16px, 700, 19.2px);
+          }
+        }
+      }
+      .section4-box3 {
+        @include Flex(row, flex-start, flex-start, 5px);
+        background-image: url("/img/backavatar2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 239px 191px 24px 24px;
+        &__texts {
+          &-title {
+            color: $main-color;
+            @include Inter(14px, 400, 22.4px);
+          }
+
+          &-text {
+            color: $hover;
+            @include Inter(16px, 700, 19.2px);
+          }
+        }
+      }
+      .section4-box4 {
+        @include Flex(row, flex-start, flex-start, 5px);
+        background-image: url("/img/backavatar3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 239px 212px 24px 24px;
+        &__texts {
+          &-title {
+            color: $main-color;
+            @include Inter(14px, 400, 22.4px);
+          }
+
+          &-text {
+            color: $hover;
+            @include Inter(16px, 700, 19.2px);
+          }
+        }
+      }
+      .section4-box5{
+        @include Flex(row,flex-start,flex-start,5px);
+        background-image: url("/img/backavatar4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 580px 246px 24px 24px;
+
+        &__texts{
+          &-title{
+            color: $main-color;
+            @include Inter(14px,400,22.4px);
+          }
+          &-text{
+            color: $hover;
+            @include Inter(16px,700,19.2px);
+          }
+        }
+      }
+    }
+  }
+  .section5{
+    @include Flex(row,flex-start,flex-start,15px);
+    &-container1{
+      @include Flex(row,center,center,15px);
+      width: 60%;
+      &__img{
+        margin-left:100px;
+      }
+      &__img1{
+        margin-top: 100px;
+        margin-left: -155px;
+      }
+    }
+    &-container2{
+      @include Flex(column,flex-start,flex-start,15px);
+      width: 30%;
+      &__title{
+        @include Canela(48px,500,57.6px);
+        color:$hover;
+        &--green{
+          color: $Primer;
+        }
+      }
+      &__text{
+        @include Inter(16px,400,25.6px);
+        color:$main-color;
+      }
+      &__input{
+        &-textbox{
+
+        }
+        &-btn{
+          padding: 5px 15px;
+        }
+      }
+    }
+  }
 }
+.footer{
+  padding: 150px 150px 50px 150px;
+&-container1 {
+  @include Flex(row, flex-start, flex-start, 230px);
+
+  &-block {
+    width: 25%;
+    @include Flex(column, flex-start, flex-start, 10px);
+
+    &__text {
+      @include Inter(16px, 400, 25.6px);
+      color: $main-color;
+    }
+
+    &-socium {
+      @include Flex(row, flex-start, flex-start, 15px);
+    }
+  }
+
+  &-block2 {
+    @include Flex(row, flex-start, flex-start, 55px);
+
+    &__title {
+      color: $hover;
+      @include Inter(20px, 700, 24px);
+    }
+
+    &-list {
+      &-item {
+        &__link {
+          color: $main-color;
+          @include Inter(16px, 400, 25.6px);
+        }
+      }
+    }
+  }
+}
+  &-container2{
+    padding-top: 50px;
+    @include Flex(row,flex-start,space-between,5px);
+    &__text{
+      @include Inter(16px,400,25.6px);
+      color:$main-color;
+    }
+    &-texts{
+      @include Flex(row,flex-start,flex-start,25px);
+    }
+  }
+}
+
 
 
 
