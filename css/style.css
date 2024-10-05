@@ -109,6 +109,8 @@ body {
     border-bottom: 1px solid #D3F85A; }
   .header__btn {
     padding: 5px 15px; }
+  .header .header__burger {
+    display: none; }
 
 .main .section1 {
   margin-top: 118px;
@@ -649,6 +651,157 @@ body {
       align-items: flex-start;
       justify-content: flex-start;
       gap: 25px; }
+
+@media screen and (max-width: 1512px) and (min-width: 375px) {
+  .header .nav {
+    display: none; }
+  .header__btn {
+    display: none; }
+  .header .header__burger {
+    display: block; }
+  .main {
+    padding: 5px; }
+    .main .section1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px; }
+      .main .section1-container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 450px;
+        width: 100%; }
+      .main .section1-box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        text-align: center; }
+        .main .section1-box1__title {
+          font-size: 39px;
+          font-weight: 500;
+          line-height: 46.8px;
+          font-family: Canela; }
+      .main .section1-stats {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 40px; }
+        .main .section1-stats__sts-number {
+          font-size: 31px;
+          font-weight: 500;
+          line-height: 37.2px;
+          font-family: Canela; }
+      .main .section1-container2__back {
+        padding: 25px 35px;
+        position: absolute;
+        top: 500px; }
+      .main .section1-container2__star {
+        position: absolute;
+        top: 670px;
+        z-index: 1;
+        left: -1px;
+        width: 25%; }
+      .main .section1-shalker {
+        position: absolute;
+        top: 800px;
+        right: 5px; }
+    .main .section2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px; }
+      .main .section2-box1 {
+        text-align: center; }
+        .main .section2-box1__title {
+          font-size: 31px;
+          font-weight: 500;
+          line-height: 37.2px;
+          font-family: Canela; }
+      .main .section2 .cards {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; }
+        .main .section2 .cards-card {
+          width: 100%; }
+    .main .section3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px; }
+      .main .section3-container1 {
+        text-align: center;
+        width: 100%;
+        padding: 0; }
+        .main .section3-container1__title {
+          font-size: 31px;
+          font-weight: 500;
+          line-height: 37.2px;
+          font-family: Canela; }
+        .main .section3-container1__text {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 25.6px;
+          font-family: Inter; }
+      .main .section3-container2__img {
+        padding: 30px;
+        position: absolute;
+        left: 50px; }
+      .main .section3-container2__img1 {
+        padding: 30px;
+        position: absolute;
+        right: 50px; }
+    .main .section4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px; }
+      .main .section4-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px; }
+        .main .section4-container2-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 15px; }
+          .main .section4-container2-wrapper-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; }
+      .main .section4-box1 {
+        height: 356px;
+        width: 90%; }
+      .main .section4-box2 {
+        height: 356px;
+        width: 90%; }
+      .main .section4-box3 {
+        height: 356px;
+        width: 90%; }
+      .main .section4-box4 {
+        height: 356px;
+        width: 90%; }
+      .main .section4-box5 {
+        height: 356px;
+        width: 90%; }
+        .main .section4-box5__img {
+          height: 356px; } }
 
 @font-face {
   font-family: 'Canela';

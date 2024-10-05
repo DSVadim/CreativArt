@@ -31,6 +31,9 @@ body{
   &__btn {
     padding:5px 15px;
   }
+  .header__burger{
+    display: none;
+  }
 }
 .main {
   .section1 {
@@ -498,7 +501,144 @@ body{
 
 
 
+@media screen and (max-width: 1512px) and (min-width: 375px){
+  .header{
+    .nav{
+      display: none;
+    }
+    &__btn{
+      display: none;
+    }
+    .header__burger{
+      display: block;
+    }
+  }
+  .main{
+    padding: 5px;
+    .section1{
+      @include Flex(column,center,center,15px);
+      &-container1 {
+        @include Flex(column,center,center,450px);
+        width: 100%;
+      }
+        &-box1{
+          @include Flex(column,center,center,15px);
+          text-align: center;
+          &__title{
+            @include Canela(39px, 500, 46.8px);
+          }
+        }
+      &-stats{
+        @include Flex(row, center, center, 40px);
+        &__sts{
+          &-number{
+            @include Canela(31px,500,37.2px);
+          }
+          &-text{
 
+          }
+        }
+      }
+      &-container2{
+        &__back{
+          padding: 25px 35px;
+          position: absolute;
+          top: 500px;
+        }
+        &__star{
+          position: absolute;
+          top:670px;
+          z-index: 1;
+          left: -1px;
+          width: 25%;
+        }
+      }
+      &-shalker{
+        position: absolute;
+        top:800px;
+        right: 5px;
+      }
+      }
+    .section2{
+      @include Flex(column,center,center,15px);
+      &-box1{
+        text-align: center;
+        &__title{
+          @include Canela(31px,500,37.2px);
+        }
+      }
+      .cards{
+        padding: 0;
+        @include Flex(column,center,center,15px);
+        &-card{
+          width: 100%;
+        }
+      }
+    }
+    .section3{
+      @include Flex(column,center,center,15px);
+      &-container1{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        &__title{
+          @include Canela(31px,500,37.2px);
+        }
+        &__text{
+          @include Inter(14px,400,25.6px);
+        }
+      }
+      &-container2{
+        &__img{
+          padding: 30px;
+          position: absolute;
+          left: 50px;
+        }
+        &__img1{
+          padding: 30px;
+          position: absolute;
+          right: 50px;
+        }
+      }
+    }
+    .section4{
+      @include Flex(column,center,center,15px);
+      &-container2{
+        &-wrapper{
+          &-block{
+            @include Flex(column,center,center,15px);
+
+          }
+          @include Flex(column,center,center,15px);
+        }
+        @include Flex(column,center,center,15px);
+      }
+      &-box1{
+        height: 356px;
+        width: 90%;
+      }
+      &-box2{
+        height: 356px;
+        width: 90%;
+      }
+      &-box3{
+        height: 356px;
+        width: 90%;
+      }
+      &-box4{
+        height: 356px;
+        width: 90%;
+      }
+      &-box5{
+        &__img{
+          height: 356px;
+        }
+        height: 356px;
+        width: 90%;
+      }
+    }
+  }
+}
 @font-face {
   font-family: 'Canela';
   src: url(Font/CanelaText-Medium-Trial.otf) format('otf');
